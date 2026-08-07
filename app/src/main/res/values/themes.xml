@@ -1,0 +1,238 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme — בהיר, מינימליסטי, אקסנט כחול פיננסי. -->
+    <style name="Base.Theme.Capitall" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/accent_blue</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">@color/accent_blue</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="android:colorBackground">@color/surface_base</item>
+        <item name="colorControlHighlight">#141E63E9</item>
+
+        <!-- שורת סטטוס בהירה עם אייקונים כהים -->
+        <item name="android:statusBarColor">@color/surface_base</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/surface_base</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+
+        <!-- מעברי מסך אחידים לכל האפליקציה (עלייה עדינה + עומק) -->
+        <item name="android:windowAnimationStyle">@style/WindowAnimation.Capitall</item>
+    </style>
+
+    <style name="Theme.Capitall" parent="Base.Theme.Capitall" />
+
+    <!--
+      מסך הכניסה יושב על גרדיאנט כחול עמוק, ולכן שורת הסטטוס חייבת אייקונים בהירים
+      (בניגוד לשאר האפליקציה הבהירה).
+    -->
+    <style name="Theme.Capitall.Login" parent="Base.Theme.Capitall">
+        <item name="android:statusBarColor">#2E74F5</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/surface_card</item>
+    </style>
+
+    <!-- הדשבורד: ראש המסך כחול ורציף עד שורת הסטטוס, ולכן אייקונים בהירים -->
+    <style name="Theme.Capitall.Dashboard" parent="Base.Theme.Capitall">
+        <item name="android:statusBarColor">#2E74F5</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/surface_base</item>
+    </style>
+
+    <!-- ===== תנועה: מעברי מסך ===== -->
+    <style name="WindowAnimation.Capitall" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_exit</item>
+    </style>
+
+    <!-- ===== מערכת עיצוב משותפת ===== -->
+
+    <!-- כרטיס משטח סטנדרטי: פינות מעוגלות, צל עדין (Robinhood-flat), משטח לבן -->
+    <style name="Widget.Capitall.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/surface_card</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">1dp</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
+    <!-- כותרת סעיף: מודגשת, ריווח אותיות, טקסט כהה -->
+    <style name="TextAppearance.Capitall.SectionTitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <!-- תווית מדד קטנה מעל ערך -->
+    <style name="TextAppearance.Capitall.MetricLabel" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:textColor">@color/on_surface_muted</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <!-- ערך מדד בולט -->
+    <style name="TextAppearance.Capitall.MetricValue" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- ===== טיפוגרפיה: מספרים דומיננטיים (החתימה של האפליקציה) ===== -->
+
+    <!-- הערך הראשי בכרטיס ה-Hero הכהה: ענק, צפוף, לבן -->
+    <style name="TextAppearance.Capitall.HeroValue" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">42sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- תווית בתוך ה-Hero הכהה -->
+    <style name="TextAppearance.Capitall.HeroLabel" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:textColor">#CFE0FF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+
+
+    <!-- ===== רכיבי רשימה ומצבים ===== -->
+
+
+
+    <!-- כותרת/גוף למצב ריק -->
+    <style name="TextAppearance.Capitall.EmptyTitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Capitall.EmptyBody" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/on_surface_muted</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingMultiplier">1.25</item>
+    </style>
+
+    <!-- באדג' גלולה רך (אחוז שינוי / תגית) -->
+    <style name="TextAppearance.Capitall.Badge" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingHorizontal">10dp</item>
+        <item name="android:paddingVertical">3dp</item>
+    </style>
+
+    <!-- ===== שפת כפתורים: פילים מינימליים (Robinhood-style) ===== -->
+
+    <!-- כפתור ראשי: גלולה כחולה מלאה, גבוה ובולט, עם אנימציית לחיצה -->
+    <style name="Widget.Capitall.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="android:minHeight">56dp</item>
+        <item name="backgroundTint">@color/accent_blue</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="rippleColor">#33FFFFFF</item>
+        <item name="android:stateListAnimator">@animator/press_scale</item>
+    </style>
+
+    <!-- כפתור משני: גלולת מסגרת דקה עם טקסט כחול -->
+    <style name="Widget.Capitall.Button.Secondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textColor">@color/accent_blue</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="strokeColor">@color/accent_blue</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="rippleColor">@color/accent_soft_bg</item>
+        <item name="android:stateListAnimator">@animator/press_scale</item>
+    </style>
+
+    <!-- כפתור הרסני (התנתקות/מחיקה): גלולת מסגרת אדומה -->
+    <style name="Widget.Capitall.Button.Danger" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textColor">@color/red_negative</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="strokeColor">@color/red_negative</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="rippleColor">@color/red_soft_bg</item>
+        <item name="android:stateListAnimator">@animator/press_scale</item>
+    </style>
+
+    <!-- כפתור טקסט שקט (סגירה/החלפה) -->
+    <style name="Widget.Capitall.Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/on_surface_muted</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="rippleColor">@color/surface_elevated</item>
+    </style>
+
+    <!-- קטע ב-Segmented Control (MaterialButtonToggleGroup): "בוהן" לבנה על מסילה אפרפרה -->
+    <style name="Widget.Capitall.SegmentedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="backgroundTint">@color/segmented_btn_bg</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="android:textColor">@color/segmented_text</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">42dp</item>
+        <item name="cornerRadius">21dp</item>
+        <item name="rippleColor">@color/accent_soft_bg</item>
+    </style>
+
+    <!-- קטע ב-Segmented Control מבוסס RadioButton (מסך הוספת נכס) -->
+    <style name="Widget.Capitall.SegmentedRadio" parent="">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/bg_segmented_thumb</item>
+        <item name="android:textColor">@color/segmented_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">42dp</item>
+        <item name="android:paddingHorizontal">12dp</item>
+    </style>
+
+    <!-- צ'יפ אחיד: פיל רך בלי מסגרת; נבחר = כחול-רך עם טקסט כחול -->
+    <style name="Widget.Capitall.Chip" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_bg</item>
+        <item name="android:textColor">@color/chip_text</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipCornerRadius">20dp</item>
+        <item name="chipMinHeight">36dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- כפתור טווח בגרף המניה: גלולה כחולה-רכה כשנבחר -->
+    <style name="StockChartRangeButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingVertical">8dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/range_text</item>
+        <item name="android:background">@drawable/bg_range_selected</item>
+        <item name="android:layout_marginHorizontal">2dp</item>
+    </style>
+</resources>

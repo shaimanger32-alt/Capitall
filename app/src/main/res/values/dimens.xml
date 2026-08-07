@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      ===== סולם מרווחים / רדיוסים / עומק =====
+      סולם 4dp אחיד. שימוש בטוקנים במקום מספרים קסומים שומר על קצב ויזואלי עקבי בכל המסכים.
+    -->
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">12dp</dimen>
+    <dimen name="space_lg">16dp</dimen>
+    <dimen name="space_xl">20dp</dimen>
+    <dimen name="space_2xl">28dp</dimen>
+    <dimen name="space_3xl">40dp</dimen>
+
+    <!-- שוליים אופקיים אחידים לכל מסך -->
+
+    <!-- רדיוסים -->
+    <dimen name="radius_sm">10dp</dimen>
+    <dimen name="radius_md">16dp</dimen>
+
+    <!-- עומק (Robinhood-flat: צל עדין מאוד) -->
+    <dimen name="elevation_flat">0dp</dimen>
+
+    <!-- גדלים -->
+    <dimen name="icon_container">44dp</dimen>
+    <dimen name="icon_size">22dp</dimen>
+    <dimen name="hairline">1dp</dimen>
+</resources>

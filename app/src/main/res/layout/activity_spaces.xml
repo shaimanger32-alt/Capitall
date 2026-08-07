@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_base"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/surface_card"
+        android:elevation="4dp"
+        android:title="@string/spaces_title"
+        android:titleTextColor="@color/on_surface"
+        app:navigationIconTint="@color/on_surface"
+        app:titleTextAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="3dp"
+                    android:text="@string/spaces_intro"
+                    android:textColor="@color/on_surface_muted"
+                    android:textSize="14sp" />
+
+                <!-- פעולות: יצירת תיק / הצטרפות בקוד -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCreateSpace"
+                        style="@style/Widget.Capitall.Button.Primary"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:text="@string/spaces_create" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnJoinSpace"
+                        style="@style/Widget.Capitall.Button.Secondary"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/spaces_join" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvSpacesHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/spaces_my_spaces"
+                    android:textAppearance="@style/TextAppearance.Capitall.MetricLabel" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSpaces"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_space" />
+
+                <include
+                    android:id="@+id/emptyState"
+                    layout="@layout/view_empty_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/accent_blue"
+            android:visibility="gone"
+            tools:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

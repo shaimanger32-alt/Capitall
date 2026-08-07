@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  שורה בטבלת העסקאות האחרונות בדשבורד: תאריך · תגית קטגוריה · תיאור · סכום.
+  הרוחבים חייבים להישאר זהים לשורת העמודות ב-activity_dashboard.xml, אחרת הטבלה
+  מפסיקה להתיישר. הסדר לוגי (start←end) כדי שיתהפך נכון בעברית ובאנגלית.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:minHeight="46dp"
+    android:orientation="horizontal"
+    android:paddingVertical="6dp">
+
+    <TextView
+        android:id="@+id/tvTxDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="42dp"
+        android:textColor="@color/on_surface_muted"
+        android:textSize="11sp"
+        tools:text="04/08" />
+
+    <!-- תגית הקטגוריה: רקע בגוון הקטגוריה בשקיפות, אייקון וטקסט בצבע מלא -->
+    <TextView
+        android:id="@+id/tvTxCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/badge_background"
+        android:drawablePadding="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="88dp"
+        android:minWidth="64dp"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="3dp"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        tools:text="אוכל" />
+
+    <TextView
+        android:id="@+id/tvTxMerchant"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/on_surface"
+        android:textSize="13sp"
+        tools:text="ארוחת צהריים – גרג" />
+
+    <TextView
+        android:id="@+id/tvTxAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="end"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        tools:text="-₪78" />
+
+</LinearLayout>

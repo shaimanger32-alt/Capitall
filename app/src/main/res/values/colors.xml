@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      ===== Capitall — מערכת עיצוב בהירה (Light / Robinhood-style) =====
+      האפליקציה עברה מ-navy כהה לחוויה בהירה ומינימליסטית בסגנון אפליקציות מסחר מקצועיות:
+      רקע בהיר, טקסט כהה, אקסנט כחול פיננסי, וירוק/אדום לרווח/הפסד.
+
+      שמות הטוקנים נשמרו (navy_*, gold_*) כדי לא לשבור עשרות layouts שמפנים אליהם —
+      אך הערכים כעת בהירים. שכבת שמות סמנטית חדשה מתווספת בהמשך (surface/on_surface/accent).
+      ההעתקה הבאה מגדירה את הערכים הבהירים במקום אחד.
+    -->
+
+    <!-- ===== טוקנים סמנטיים חדשים (מומלץ להשתמש בהם קדימה) ===== -->
+    <color name="surface_base">#F5F6F8</color>        <!-- רקע מסך -->
+    <color name="surface_card">#FFFFFF</color>        <!-- משטח כרטיס -->
+    <color name="surface_elevated">#EEF1F5</color>    <!-- צ'יפ / משטח מוגבה עדין -->
+    <color name="on_surface">#0F1720</color>          <!-- טקסט ראשי כהה -->
+    <color name="on_surface_muted">#6B7280</color>    <!-- טקסט משני -->
+    <color name="accent_blue">#1E63E9</color>         <!-- אקסנט ראשי -->
+    <color name="accent_soft_bg">#E9F0FE</color>      <!-- רקע רך למצב נבחר (צ'יפ/טווח/סגמנט) -->
+    <color name="hairline">#E6E8EC</color>            <!-- קו הפרדה / גבול -->
+
+    <!-- ===== מיפוי שמות ותיקים -> ערכים בהירים ===== -->
+    <color name="navy_dark">#F5F6F8</color>           <!-- רקע מסך ראשי -->
+    <color name="gold_accent">#1E63E9</color>         <!-- אקסנט (כעת כחול) -->
+    <color name="green_positive">#16A34A</color>
+    <color name="red_negative">#DC2626</color>
+    <color name="white">#0F1720</color>              <!-- שימש כ"טקסט ראשי" — כעת כהה -->
+    <color name="gray_light">#6B7280</color>          <!-- טקסט משני -->
+
+    <!-- משטחים בעלי עומק -->
+    <color name="navy_card">#FFFFFF</color>
+    <color name="navy_elevated">#EEF1F5</color>
+    <color name="divider">#E6E8EC</color>
+    <color name="gold_soft">#5B8DEF</color>
+    <color name="chart_category">#1E63E9</color>
+    <!--
+      קו-ייחוס השווי הנקי בגרף המשולב: חייב להיות מובחן מהקו הראשי (הכחול).
+      אפור-צפחה מקווקו קורא כ"בנצ'מרק" משני ולא מתחרה בסדרה הראשית.
+    -->
+    <color name="chart_benchmark">#64748B</color>
+
+    <!-- רקעי צ'יפ רכים למגמות -->
+    <color name="green_soft_bg">#E7F6EE</color>
+    <color name="red_soft_bg">#FCEAEA</color>
+
+    <!-- מסך בחירת קטגוריה (עיצוב בהיר) -->
+    <color name="picker_bg">#FFFFFF</color>
+    <color name="picker_leaf_bg">#F3F4F6</color>
+    <color name="picker_text_primary">#0F1720</color>
+    <color name="picker_text_secondary">#6B7280</color>
+</resources>

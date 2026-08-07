@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  היריעה הלבנה של תוכן הדשבורד: מתעגלת בפינות העליונות ו"עולה" מעל רקע הכחול
+  של ראש המסך. המעבר הוא עקומה רכה ולא קו חד — כך הכחול נקרא כחלק מהדף.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/surface_base" />
+    <corners
+        android:topLeftRadius="28dp"
+        android:topRightRadius="28dp" />
+</shape>

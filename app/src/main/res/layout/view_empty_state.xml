@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  מצב ריק אחיד לכל האפליקציה: אייקון בעיגול רך, כותרת, גוף הסבר וכפתור פעולה אופציונלי.
+  משולב ב-<include> במסכי הרשימות; הטקסטים והאייקון נקבעים בקוד לפי המסך.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/emptyStateRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/space_3xl"
+    android:paddingVertical="@dimen/space_2xl">
+
+    <FrameLayout
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:background="@drawable/bg_empty_orb">
+
+        <ImageView
+            android:id="@+id/ivEmptyIcon"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_analytics_empty"
+            app:tint="@color/accent_blue" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvEmptyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_lg"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.Capitall.EmptyTitle" />
+
+    <TextView
+        android:id="@+id/tvEmptyBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_sm"
+        android:textAppearance="@style/TextAppearance.Capitall.EmptyBody" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEmptyAction"
+        style="@style/Widget.Capitall.Button.Secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xl"
+        android:paddingHorizontal="@dimen/space_2xl"
+        android:visibility="gone" />
+
+</LinearLayout>

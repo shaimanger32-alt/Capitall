@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- רקע ראש הדשבורד: גרדיאנט כחול רציף מאחורי הסרגל, החיפוש, הטיקר והשווי הנקי -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:type="linear"
+        android:angle="125"
+        android:startColor="#2E74F5"
+        android:centerColor="#1E63E9"
+        android:endColor="#1A4FBF" />
+</shape>

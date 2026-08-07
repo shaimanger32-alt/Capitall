@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Capitall</string>
+
+    <string name="nav_open">פתח תפריט ניווט</string>
+    <string name="nav_close">סגור תפריט ניווט</string>
+
+    <!-- Login -->
+    <string name="login_tagline">כל החיים הפיננסיים שלכם בגרף אחד.</string>
+    <string name="login_sign_in_hint">התחברו כדי להמשיך</string>
+    <string name="login_welcome">ברוכים הבאים</string>
+    <string name="login_google_button">המשך עם Google</string>
+    <string name="login_feature_track">מעקב אחר כל נכס בזמן אמת</string>
+    <string name="login_feature_insights">תובנות חכמות על השווי הנקי שלכם</string>
+    <string name="login_feature_secure">פרטי ומאובטח באמצעות Google</string>
+    <string name="login_terms">בהמשך אתם מאשרים את תנאי השימוש ומדיניות הפרטיות</string>
+
+    <!-- Drawer -->
+    <string name="drawer_dashboard">לוח בקרה</string>
+    <string name="drawer_portfolio">מסנן עסקאות</string>
+    <string name="drawer_assets">הנכסים וההתחייבויות שלי</string>
+    <string name="drawer_deepdive">ניתוח מעמיק</string>
+    <string name="drawer_settings_header">הגדרות</string>
+    <string name="drawer_settings">הגדרות</string>
+    <string name="drawer_language">שפה</string>
+    <string name="drawer_sign_out">התנתקות</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_toolbar_title">Capitall</string>
+    <string name="dashboard_search_hint">חיפוש עסקאות, בתי עסק או קטגוריות…</string>
+    <string name="dashboard_net_worth_label">שווי נקי</string>
+    <string name="dashboard_assets_label">נכסים</string>
+    <string name="dashboard_cash_label">מזומן</string>
+    <string name="dashboard_liabilities_label">התחייבויות</string>
+    <string name="dashboard_overview_title">סקירה כללית</string>
+    <string name="dashboard_cashflow_title">תזרים מזומנים (6 חודשים)</string>
+    <string name="dashboard_allocation_title">הקצאת נכסים</string>
+    <string name="dashboard_insights_title">תובנות פיננסיות חכמות</string>
+    <string name="insight_top_expense">%1$s היא ההוצאה הגדולה ביותר שלך החודש (%2$s)</string>
+    <string name="insight_savings">חסכת %1$d%% מההכנסה שלך החודש</string>
+    <string name="insight_overspending">ההוצאות שלך החודש עלו על ההכנסות</string>
+    <string name="insight_recurring">%1$d תשלומים חוזרים פעילים</string>
+    <string name="dashboard_transactions_title">עסקאות אחרונות</string>
+    <string name="dashboard_transactions_view_all">הצג הכל</string>
+    <string name="dashboard_add_asset_desc">הוספה</string>
+    <string name="dashboard_add_choose_title">מה תרצה להוסיף?</string>
+    <string name="dashboard_add_transaction_option">עסקה (הכנסה / הוצאה)</string>
+    <string name="dashboard_add_asset_option">נכס או התחייבות</string>
+    <string name="add_chooser_transaction_desc">כסף שנכנס או יוצא עכשיו</string>
+    <string name="add_chooser_transaction_examples">משכורת · קניות · חשבונות · העברה</string>
+    <string name="add_chooser_asset_desc">משהו שאתה מחזיק לאורך זמן</string>
+    <string name="add_chooser_asset_examples">דירה · מניות · חיסכון · משכנתא · הלוואה</string>
+    <string name="add_transaction_subtitle">הכנסה או הוצאה — משפיע על יתרת המזומן שלך</string>
+    <string name="add_entry_subtitle">משהו שיש לך או שאתה חייב — חלק מהשווי הנקי</string>
+    <string name="dashboard_networth_chart_desc">מגמת השווי הנקי לאורך זמן</string>
+    <string name="dashboard_cashflow_chart_desc">גרף תזרים מזומנים לששת החודשים האחרונים</string>
+    <string name="dashboard_allocation_chart_desc">פילוח הקצאת הנכסים לפי קטגוריה</string>
+    <string name="dashboard_chart_net_worth">שווי נקי</string>
+    <string name="dashboard_chart_total_income">סה"כ הכנסות</string>
+    <string name="dashboard_chart_select_title">בחר תצוגת גרף</string>
+    <string name="dashboard_chart_no_data">אין עדיין נתונים — הוסיפו נכס או התחייבות כדי לראות מגמה</string>
+    <string name="dashboard_chart_range_select_title">בחר טווח זמן</string>
+    <string name="dashboard_chart_range_day">יום</string>
+    <string name="dashboard_chart_range_week">שבוע</string>
+    <string name="dashboard_chart_range_month">חודש</string>
+    <string name="dashboard_chart_range_year">שנה</string>
+    <string name="dashboard_chart_range_all">הכל</string>
+
+    <!-- KPI Labels -->
+    <string name="kpi_liquid_net_worth">שווי נזיל</string>
+    <string name="kpi_monthly_income">הכנסה חודשית</string>
+    <string name="kpi_monthly_expenses">הוצאות חודשיות</string>
+    <string name="kpi_savings_rate">שיעור חיסכון</string>
+    <string name="kpi_savings_rate_value">%1$d%% נחסך</string>
+    <string name="kpi_recurring_income">הכנסה קבועה חודשית</string>
+    <string name="kpi_recurring_payments">תשלומים קבועים חודשיים</string>
+
+    <!-- קטגוריות -->
+    <string name="category_transport">תחבורה</string>
+    <string name="category_entertainment">בידור</string>
+    <string name="category_health">בריאות</string>
+    <!-- קטגוריות עסקה כלליות (מאוחדות) -->
+    <string name="category_food">מזון</string>
+    <string name="category_housing_bills">דיור וחשבונות</string>
+    <string name="category_shopping">קניות</string>
+    <string name="category_other_expense">אחר</string>
+    <!-- קטגוריות הכנסה כלליות -->
+    <string name="category_salary">משכורת</string>
+    <string name="category_business_income">עסק / פרילנס</string>
+    <string name="category_investment_income">השקעות</string>
+    <string name="category_rent_income">הכנסה משכירות</string>
+    <string name="category_gift_income">מתנה</string>
+    <string name="category_income_other">הכנסה אחרת</string>
+    <string name="category_real_estate">נדל״ן</string>
+    <string name="category_stocks_investments">מניות והשקעות</string>
+    <string name="category_cash_savings">מזומן וחיסכון</string>
+    <string name="category_vehicle">רכב</string>
+    <string name="category_crypto">קריפטו</string>
+    <string name="category_pension_retirement">פנסיה / קרן פרישה</string>
+    <string name="category_other_assets">נכסים אחרים</string>
+    <string name="category_business_equity">אחזקה בעסק</string>
+    <string name="category_bonds">אג״ח</string>
+    <string name="category_foreign_currency">מט״ח</string>
+    <string name="category_mortgage">משכנתא</string>
+    <string name="category_loan">הלוואה</string>
+    <string name="category_credit_card">כרטיס אשראי</string>
+    <string name="category_student_loan">הלוואת סטודנטים</string>
+    <string name="category_credit_line">מסגרת אשראי / משיכת יתר</string>
+    <string name="category_other_liabilities">התחייבויות אחרות</string>
+
+    <!-- קבוצות בורר הקטגוריות -->
+    <string name="category_group_cash">מזומן ושווי מזומן</string>
+    <string name="category_group_investment">השקעות</string>
+    <string name="category_group_property">נכסים והון</string>
+    <string name="category_group_other">נכסים אחרים</string>
+    <string name="category_group_liability">התחייבויות</string>
+    <string name="select_category_title">הוספת חשבון</string>
+
+    <!-- אפשרויות הכנסה/תשלום חוזרות לקטגוריה -->
+    <string name="category_option_rental_income">הכנסה משכירות (חודשי)</string>
+    <string name="category_option_dividend_income">דיבידנדים (הערכה חודשית)</string>
+    <string name="category_option_interest_income">ריבית (הערכה חודשית)</string>
+    <string name="category_option_monthly_payment">תשלום חודשי</string>
+
+    <!-- Ticker -->
+    <string name="ticker_current_balance">יתרה נוכחית</string>
+    <string name="ticker_month_expenses">הוצאות החודש</string>
+    <string name="ticker_projected_balance">תחזית סוף חודש</string>
+
+    <!-- Portfolio -->
+    <string name="portfolio_title">תיק נכסים</string>
+    <!-- מצבי ריק מונחי-פעולה -->
+    <string name="empty_portfolio_title">בנה את המאזן שלך</string>
+    <string name="empty_portfolio_body">הוסף מה שיש לך ומה שאתה חייב, ותראה את השווי הנקי מתחיל להתגבש.</string>
+    <string name="empty_portfolio_action">הוספת הרשומה הראשונה</string>
+    <string name="empty_stocks_title">עדיין אין אחזקות</string>
+    <string name="empty_stocks_body">הוסף מניה ו-Capitall יעקוב עבורך אחרי שווי השוק החי שלה.</string>
+    <string name="empty_category_title">עדיין אין כאן כלום</string>
+    <string name="empty_category_body">רשומות שתוסיף בקטגוריה הזו יופיעו כאן.</string>
+    <string name="portfolio_delete_title">למחוק את %1$s?</string>
+    <string name="portfolio_delete_message">לא ניתן לבטל פעולה זו.</string>
+    <string name="portfolio_delete_confirm">מחיקה</string>
+    <string name="portfolio_delete_cancel">ביטול</string>
+    <string name="portfolio_category_with_recurring">%1$s · %2$s: %3$s לחודש</string>
+
+    <plurals name="portfolio_category_item_count">
+        <item quantity="one">פריט אחד</item>
+        <item quantity="two">%1$d פריטים</item>
+        <item quantity="other">%1$d פריטים</item>
+    </plurals>
+
+    <!-- Stock Portfolio -->
+    <string name="stock_portfolio_title">תיק מניות</string>
+    <string name="stock_portfolio_error_load_failed">טעינת מחירי המניות נכשלה</string>
+    <string name="stock_portfolio_total_invested_label">סה"כ הושקע</string>
+    <string name="stock_portfolio_current_value_label">שווי נוכחי</string>
+    <string name="stock_portfolio_total_gain_loss_label">רווח / הפסד כולל</string>
+    <string name="stock_portfolio_gain_loss_format">%1$s (%2$s)</string>
+    <string name="crypto_portfolio_title">תיק קריפטו</string>
+    <string name="crypto_portfolio_empty_state">עדיין אין קריפטו — הוסיפו מקטגוריית קריפטו</string>
+    <string name="stock_portfolio_ils_equivalent">≈ %1$s</string>
+    <string name="stock_portfolio_fx_rate">שער המרה: %1$s לכל $1</string>
+    <string name="stock_portfolio_quantity_format">כמות: %1$s</string>
+    <string name="stock_portfolio_avg_cost_format">מחיר קנייה ממוצע: %1$s</string>
+    <string name="stock_portfolio_current_price_format">מחיר נוכחי: %1$s</string>
+
+    <!-- Stock Chart -->
+    <string name="stock_chart_error_load_failed">טעינת נתוני הגרף נכשלה</string>
+
+    <!-- Add Asset / Liability -->
+    <string name="add_entry_title">הוספת רשומה</string>
+    <string name="add_entry_type_asset">נכס</string>
+    <string name="add_entry_type_liability">התחייבות</string>
+    <string name="add_entry_name_hint">שם</string>
+    <string name="add_entry_category_hint">קטגוריה</string>
+    <string name="add_entry_value_hint">סכום (₪)</string>
+    <string name="add_entry_value_hint_currency">סכום (%1$s)</string>
+    <string name="add_entry_currency_label">מטבע</string>
+    <string name="add_entry_currency_conversion">≈ %1$s (שער %2$s)</string>
+    <string name="dashboard_toggle_balance_desc">הצג או הסתר את השווי הנקי</string>
+    <string name="dashboard_balance_hidden">••••••</string>
+    <string name="add_entry_date_hint">תאריך</string>
+    <string name="add_entry_rate_hint">שיעור שינוי שנתי</string>
+    <string name="add_entry_rate_helper">ממוצע הקטגוריה — ניתן לשנות לפי הצורך</string>
+    <string name="add_entry_term_hint">תקופת הלוואה (שנים)</string>
+    <string name="add_entry_term_helper">משמש לחישוב ירידת היתרה לאורך זמן (סילוקין)</string>
+    <string name="add_entry_save">שמירה</string>
+    <string name="add_entry_saved_success">נשמר בהצלחה</string>
+    <string name="add_entry_error_no_user">משתמש לא מחובר</string>
+    <string name="add_entry_error_no_name">נא להזין שם</string>
+    <string name="add_entry_error_invalid_value">נא להזין סכום תקין</string>
+    <string name="add_entry_search_stock_button">חיפוש מניה לפי סימול</string>
+
+    <!-- Add Stock -->
+    <string name="add_stock_title">הוספת מניה</string>
+    <string name="add_stock_search_hint">חיפוש לפי סימול (למשל AAPL)</string>
+    <string name="add_stock_quantity_hint">כמות</string>
+    <string name="add_stock_purchase_price_hint">מחיר קנייה למניה ($)</string>
+    <string name="add_stock_current_price_label">מחיר נוכחי: %1$s</string>
+    <string name="add_stock_change_selection">שינוי בחירה</string>
+    <string name="add_stock_error_no_selection">נא לבחור מניה תחילה</string>
+    <string name="add_stock_continue">המשך</string>
+    <string name="add_stock_pick_date_hint">המניה נוספה — בחר את תאריך הרכישה ולחץ שמור</string>
+
+    <!-- Add Crypto -->
+    <string name="add_crypto_title">הוספת קריפטו</string>
+    <string name="add_crypto_select_coin">בחר מטבע</string>
+    <string name="add_crypto_quantity_hint">כמות</string>
+    <string name="add_crypto_purchase_price_hint">מחיר קנייה למטבע ($)</string>
+    <string name="add_crypto_search_button">הוספת מטבע</string>
+    <string name="add_crypto_pick_date_hint">המטבע נוסף — בחר את תאריך הרכישה ולחץ שמור</string>
+
+    <!-- Language picker -->
+    <string name="language_picker_title">בחר שפה</string>
+    <string name="language_english">English</string>
+    <string name="language_hebrew">עברית</string>
+
+    <!-- Shared states -->
+    <string name="error_load_failed">טעינת הנתונים נכשלה. בדקו את החיבור ונסו שוב.</string>
+    <string name="action_retry">נסו שוב</string>
+
+    <!-- Search -->
+    <string name="search_title">חיפוש</string>
+    <string name="search_empty">לא נמצאו תוצאות</string>
+    <string name="search_hint_typing">הקלד כדי לחפש עסקאות ונכסים</string>
+    <string name="search_kind_transaction">עסקה</string>
+    <string name="search_kind_asset">נכס</string>
+    <string name="search_kind_liability">התחייבות</string>
+
+    <!-- Settings -->
+    <string name="settings_title">הגדרות</string>
+    <string name="settings_account_header">חשבון</string>
+    <string name="settings_preferences_header">העדפות</string>
+    <string name="settings_about_header">אודות</string>
+    <string name="settings_language">שפה</string>
+    <string name="settings_theme">ערכת נושא</string>
+    <string name="settings_theme_value">בהיר</string>
+    <string name="settings_currency">מטבע תצוגה</string>
+    <string name="settings_currency_note">הסכומים מנוהלים בש\"ח ומומרים לתצוגה לפי השער החי</string>
+    <string name="settings_currency_ils">שקל (₪)</string>
+    <string name="settings_currency_usd">דולר ($)</string>
+    <string name="settings_currency_eur">אירו (€)</string>
+    <string name="settings_currency_picker_title">מטבע תצוגה</string>
+    <string name="settings_hide_balance">הסתרת סכומים</string>
+    <string name="settings_hide_balance_note">מסתיר את השווי הנקי בלוח הבקרה (כמו כפתור העין)</string>
+    <string name="settings_version">גרסה</string>
+    <string name="settings_sign_out">התנתקות</string>
+
+    <!-- Transaction Screener -->
+    <string name="screener_title">מסנן עסקאות</string>
+    <string name="screener_filter_date_all">כל הזמנים</string>
+    <string name="screener_filter_date_month">החודש</string>
+    <string name="screener_filter_date_quarter">רבעון אחרון</string>
+    <string name="screener_filter_date_ytd">מתחילת השנה</string>
+    <string name="screener_filter_categories">קטגוריות</string>
+    <string name="screener_type_all">הכל</string>
+    <string name="screener_type_expenses">הוצאות</string>
+    <string name="screener_type_income">הכנסות</string>
+    <string name="screener_min_amount">מינ׳ ₪</string>
+    <string name="screener_max_amount">מקס׳ ₪</string>
+    <string name="screener_clear_all">נקה הכל</string>
+    <string name="screener_stats_strip">נמצאו %1$d עסקאות  |  סה״כ הוצאה: %2$s  |  ממוצע: %3$s</string>
+    <string name="screener_col_date">תאריך</string>
+    <string name="screener_col_merchant">בית עסק</string>
+    <string name="screener_col_amount">סכום</string>
+    <string name="screener_detail_category">קטגוריה</string>
+    <string name="screener_detail_notes">הערות</string>
+    <string name="screener_detail_recurring">הוראת קבע</string>
+    <string name="screener_detail_close">סגירה</string>
+    <string name="screener_detail_delete">מחיקת עסקה</string>
+
+    <!-- Deep-Dive Analysis -->
+    <string name="deepdive_current_month">החודש הנוכחי</string>
+    <string name="deepdive_historical_average">ממוצע היסטורי</string>
+    <string name="deepdive_all_time_peak">שיא כל הזמנים</string>
+    <string name="deepdive_trend_title">מגמת הוצאה</string>
+    <string name="deepdive_actual_spending">הוצאה בפועל</string>
+    <string name="deepdive_budget_line">סף תקציב</string>
+    <string name="deepdive_patterns_title">דפוסי התנהגות</string>
+    <string name="deepdive_contributors_title">התורמים המובילים</string>
+    <string name="deepdive_weekday_insight">%1$d%% מההוצאה בקטגוריה זו מתרחשת בין יום חמישי בערב לשבת</string>
+    <string name="deepdive_choose_category">בחר קטגוריה לניתוח</string>
+    <string name="deepdive_empty_state">עדיין אין עסקאות בקטגוריה זו.\nהוסיפו עסקה כדי לראות ניתוח.</string>
+    <string name="deepdive_badge">ניתוח</string>
+    <string name="deepdive_subtitle">ניתוח מעמיק של ההוצאות בקטגוריה</string>
+    <string name="deepdive_transactions_count">%1$d עסקאות</string>
+    <string name="deepdive_kpi_per_month">לחודש</string>
+    <string name="deepdive_budget_toggle_title">קו תקציב</string>
+    <string name="deepdive_budget_toggle_desc">הצג את הממוצע כקו ייחוס בגרף המגמה</string>
+    <string name="deepdive_items">%1$d פריטים</string>
+    <string name="deepdive_info_title">על הניתוח הזה</string>
+    <string name="deepdive_info_message">המסך מפרק את ההוצאות שלך בקטגוריה הנבחרת — מגמה חודשית מול הממוצע שלך, בתי העסק המובילים, ובאילו ימים בשבוע אתה מוציא הכי הרבה.</string>
+    <string name="deepdive_add_transaction">הוספת עסקה</string>
+    <string name="deepdive_current_value">שווי נוכחי</string>
+    <string name="deepdive_average_value">שווי ממוצע</string>
+    <string name="deepdive_peak_value">שיא שווי</string>
+    <string name="deepdive_value_trend_title">מגמת שווי</string>
+    <string name="deepdive_holdings_title">אחזקות מובילות</string>
+    <string name="deepdive_holdings_count">%1$d אחזקות</string>
+    <string name="deepdive_subtitle_stocks">ניתוח מעמיק של תיק המניות</string>
+    <string name="deepdive_info_message_stocks">המסך מפרק את תיק המניות שלך — מגמת שווי השוק בשקלים (מומר מדולר), אילו אחזקות משקָלן הגבוה ביותר, והשווי הממוצע והשיא.</string>
+
+    <string name="weekday_sun">א׳</string>
+    <string name="weekday_mon">ב׳</string>
+    <string name="weekday_tue">ג׳</string>
+    <string name="weekday_wed">ד׳</string>
+    <string name="weekday_thu">ה׳</string>
+    <string name="weekday_fri">ו׳</string>
+    <string name="weekday_sat">ש׳</string>
+
+    <!-- Add Transaction -->
+    <string name="add_transaction_title">הוספת עסקה</string>
+    <string name="add_transaction_merchant_hint">בית עסק / תיאור</string>
+    <string name="add_transaction_category_label">קטגוריה</string>
+    <string name="add_transaction_payment_label">אמצעי תשלום</string>
+    <string name="add_transaction_date_label">תאריך</string>
+    <string name="add_transaction_add_category_desc">הוספת קטגוריה חדשה</string>
+    <string name="add_transaction_new_category_title">שם הקטגוריה החדשה</string>
+    <string name="add_transaction_error_no_merchant">נא להזין שם בית עסק</string>
+    <string name="add_transaction_error_no_category">נא לבחור קטגוריה</string>
+    <string name="add_transaction_error_save_failed">שמירת העסקה נכשלה</string>
+
+    <string name="payment_card">כרטיס אשראי</string>
+    <string name="payment_cash">מזומן</string>
+    <string name="payment_bank_transfer">העברה בנקאית</string>
+    <string name="payment_direct_debit">הוראת קבע</string>
+
+    <!-- יבוא CSV -->
+    <string name="import_title">יבוא מקובץ</string>
+    <string name="import_intro_title">יבוא דף חשבון</string>
+    <string name="import_intro_body">בחרו דף חשבון שהורדתם מהבנק או מחברת האשראי — PDF או CSV — ו-Capitall יקרא את העסקאות וישייך להן קטגוריות אוטומטית.</string>
+    <string name="import_how_header">איך זה עובד</string>
+    <string name="import_how_body">1. הורידו דף חשבון מאתר הבנק או חברת האשראי, ב-PDF או ב-CSV.\n2. בחרו כאן את הקובץ — העמודות מזוהות אוטומטית.\n3. הקטגוריות מתמלאות לפי ההיסטוריה שלכם, וככל שתשתמשו יותר הזיהוי ישתפר.\n4. עסקאות שכבר קיימות מסומנות ומדולגות, כך שיבוא חוזר בטוח.</string>
+    <string name="import_pick_file">בחירת קובץ</string>
+    <string name="import_parsing">קורא את הקובץ…</string>
+    <string name="import_saving">מייבא עסקאות…</string>
+
+    <string name="import_summary_selected">נבחרו %1$d מתוך %2$d שורות</string>
+    <string name="import_summary_duplicates">%1$d כבר קיימות</string>
+    <string name="import_summary_review">%1$d דורשות בדיקה</string>
+    <string name="import_summary_skipped">%1$d שורות לא נקראו</string>
+    <string name="import_summary_total">סך הכל %1$s</string>
+    <string name="import_select_all">בחר הכל</string>
+    <string name="import_select_none">נקה</string>
+    <string name="import_flip_signs">הפוך סימן</string>
+    <string name="import_category_picker_title">בחירת קטגוריה</string>
+    <string name="import_row_needs_review">לבדיקה</string>
+    <string name="import_row_duplicate">כבר קיימת</string>
+    <string name="import_unknown_merchant">עסקה ללא שם</string>
+
+    <plurals name="import_confirm_button">
+        <item quantity="one">ייבוא עסקה אחת</item>
+        <item quantity="two">ייבוא שתי עסקאות</item>
+        <item quantity="other">ייבוא %1$d עסקאות</item>
+    </plurals>
+    <plurals name="import_done">
+        <item quantity="one">יובאה עסקה אחת</item>
+        <item quantity="two">יובאו שתי עסקאות</item>
+        <item quantity="other">יובאו %1$d עסקאות</item>
+    </plurals>
+
+    <string name="import_error_title">היבוא נכשל</string>
+    <string name="import_error_empty">הקובץ ריק.</string>
+    <string name="import_error_no_header">לא נמצאו עמודות של תאריך וסכום בקובץ. ודאו שייצאתם דף חשבון בפורמט CSV ולא דוח סיכום.</string>
+    <string name="import_error_no_rows">לא הצלחנו לקרוא אף עסקה מהקובץ.</string>
+    <string name="import_error_spreadsheet">זהו קובץ אקסל ולא CSV. פתחו אותו במחשב, שמרו בשם בפורמט ‏\"CSV UTF-8\"‏, וייבאו את הקובץ החדש.</string>
+    <string name="import_error_pdf_locked">ה-PDF מוגן בסיסמה. פתחו אותו במחשב, שמרו עותק ללא סיסמה, וייבאו אותו.</string>
+    <string name="import_error_pdf_unreadable">לא הצלחנו לקרוא טקסט מה-PDF. אם זהו דף סרוק (תמונה) אין בו טקסט לייבוא — ייצאו מהבנק דף חשבון או CSV במקום.</string>
+    <string name="import_error_unreadable">לא ניתן לקרוא את הקובץ. ייתכן שהוא גדול מדי או בפורמט שאינו נתמך.</string>
+    <string name="import_error_load_history">לא ניתן לטעון את העסקאות הקיימות. בדקו את החיבור ונסו שוב.</string>
+    <string name="import_error_save_failed">שמירת העסקאות המיובאות נכשלה.</string>
+    <string name="import_error_nothing_selected">בחרו לפחות שורה אחת לייבוא.</string>
+
+    <!-- תיקים משותפים -->
+    <string name="spaces_title">תיקים משותפים</string>
+    <string name="spaces_intro">תיק משותף הוא פנקס הוצאות והכנסות משותף. כל מה שאתם עוקבים אחריו היום נשאר פרטי — רק מה שתוסיפו בתוך תיק גלוי לחבריו.</string>
+    <string name="spaces_my_spaces">התיקים שלי</string>
+    <string name="spaces_create">יצירת תיק</string>
+    <string name="spaces_create_body">תנו לו שם שהשותפים יזהו. תקבלו קוד כדי להזמין אותם.</string>
+    <string name="spaces_create_confirm">צור</string>
+    <string name="spaces_name_hint">שם התיק (למשל \"הדירה שלנו\")</string>
+    <string name="spaces_join">הצטרפות עם קוד</string>
+    <string name="spaces_join_body">הזינו את הקוד בן 6 התווים שקיבלתם.</string>
+    <string name="spaces_join_confirm">הצטרף</string>
+    <string name="spaces_code_hint">קוד הצטרפות</string>
+    <string name="spaces_created">התיק נוצר. קוד ההזמנה: %1$s</string>
+    <string name="spaces_joined">הצטרפת ל\"%1$s\"</string>
+    <string name="spaces_already_member">אתם כבר חברים ב\"%1$s\"</string>
+    <string name="spaces_error_name_required">נא להזין שם לתיק</string>
+    <string name="spaces_error_create_failed">לא הצלחנו ליצור את התיק. נסו שוב.</string>
+    <string name="spaces_error_code_not_found">לא נמצא תיק עם הקוד הזה</string>
+    <string name="spaces_error_join_failed">ההצטרפות נכשלה. בדקו את החיבור ונסו שוב.</string>
+    <string name="spaces_error_permission">השרת דחה את הבקשה. חוקי ההרשאות של התיקים המשותפים אינם פעילים — יש לפרוס אותם ב-Firebase.</string>
+    <string name="spaces_empty_title">חלקו הוצאות עם מישהו</string>
+    <string name="spaces_empty_body">פתחו תיק משותף לשכר דירה, לקניות או לטיול — ותראו במבט אחד מי שילם על מה ומי חייב למי.</string>
+
+    <string name="space_total_expenses">סך ההוצאות</string>
+    <string name="space_total_income">סך ההכנסות</string>
+    <string name="space_balances">מאזן</string>
+    <string name="space_ledger">הפנקס</string>
+    <string name="space_member_paid">שילם %1$s</string>
+    <string name="space_settled">מאוזן</string>
+    <string name="space_settlement_line">%1$s מעביר ל%2$s %3$s</string>
+    <string name="space_paid_by_on">שילם %1$s · %2$s</string>
+    <string name="space_add_transaction">הוספה לתיק</string>
+    <string name="space_save">שמור</string>
+    <string name="space_type_expense">הוצאה</string>
+    <string name="space_type_income">הכנסה</string>
+    <string name="space_amount_hint">סכום</string>
+    <string name="space_paid_by">מי שילם</string>
+    <string name="space_empty_title">עדיין ריק כאן</string>
+    <string name="space_empty_body">הוסיפו את ההוצאה המשותפת הראשונה, והמאזן יסתדר מעצמו.</string>
+    <string name="space_invite_title">קוד הזמנה</string>
+    <string name="space_invite_hint">שלחו את הקוד למי שתרצו לצרף. הוא יזין אותו במסך \"תיקים משותפים\" ← \"הצטרפות עם קוד\".</string>
+    <string name="space_invite_copy">העתק</string>
+    <string name="space_invite_share">שתף</string>
+    <string name="space_invite_close">סגור</string>
+    <string name="space_invite_copied">הקוד הועתק</string>
+    <string name="space_invite_share_text">הצטרפו אליי לתיק המשותף \"%1$s\" ב-Capitall. קוד ההצטרפות: %2$s</string>
+    <string name="space_leave">עזיבת התיק</string>
+    <string name="space_leave_body">תפסיקו לראות את הפנקס. הרשומות שהוספתם נשארות בתיק, כך שהמאזן של האחרים יישאר נכון.</string>
+    <string name="space_delete">מחיקת התיק</string>
+    <string name="space_delete_body">הפעולה מוחקת את התיק ואת כל הרשומות שבו עבור כולם. אי אפשר לבטל.</string>
+    <string name="space_delete_transaction">מחיקת רשומה</string>
+    <string name="space_delete_transaction_body">להסיר את \"%1$s\" מהפנקס המשותף?</string>
+    <string name="space_no_longer_member">אינכם עוד חברים בתיק הזה</string>
+    <string name="space_action_failed">הפעולה נכשלה. בדקו את החיבור ונסו שוב.</string>
+    <string name="drawer_spaces">תיקים משותפים</string>
+
+    <string name="settings_data_header">נתונים</string>
+    <string name="settings_import">יבוא מקובץ בנק</string>
+    <string name="settings_import_note">טעינת עסקאות מדף חשבון CSV</string>
+</resources>

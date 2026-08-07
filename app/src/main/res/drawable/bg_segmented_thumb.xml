@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- "בוהן" ה-Segmented Control ל-RadioButtons: לבנה כשנבחר, שקופה אחרת -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/surface_card" />
+            <corners android:radius="21dp" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/hairline" />
+        </shape>
+    </item>
+    <item>
+        <color android:color="@android:color/transparent" />
+    </item>
+</selector>

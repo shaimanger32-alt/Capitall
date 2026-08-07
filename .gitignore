@@ -1,0 +1,14 @@
+*.iml
+.gradle/
+/local.properties
+local.properties
+.idea/
+.DS_Store
+/build
+build/
+/captures
+.externalNativeBuild
+.cxx
+
+# מסמך עבודה אישי — לא חלק מהפרויקט
+SUBMISSION_PLAN.md

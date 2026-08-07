@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Capitall הוא כעת בהיר-בלבד. ערכי ה-night זהים ל-day כדי שגם אם המערכת
+      מפעילה מצב כהה, האפליקציה תישאר בהירה ועקבית (בנוסף ThemeManager כופה MODE_NIGHT_NO).
+    -->
+    <color name="picker_bg">#FFFFFF</color>
+    <color name="picker_leaf_bg">#F3F4F6</color>
+    <color name="picker_text_primary">#0F1720</color>
+    <color name="picker_text_secondary">#6B7280</color>
+</resources>

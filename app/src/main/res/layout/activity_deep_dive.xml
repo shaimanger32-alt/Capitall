@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_base">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/surface_card"
+                android:elevation="4dp"
+                android:titleTextColor="@color/on_surface"
+                app:titleTextAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                app:navigationIconTint="@color/on_surface" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- ===== כותרת עשירה ===== -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvHeaderTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/on_surface"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        tools:text="Groceries" />
+
+                    <TextView
+                        android:id="@+id/tvHeaderBadge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/bg_badge_gold"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="3dp"
+                        android:text="@string/deepdive_badge"
+                        android:textColor="@color/surface_base"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/btnInfo"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/deepdive_info_title"
+                        android:src="@drawable/ic_info" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvHeaderSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/deepdive_subtitle"
+                    android:textColor="@color/on_surface_muted"
+                    android:textSize="14sp" />
+
+                <!-- ===== מצב ריק ===== -->
+                <LinearLayout
+                    android:id="@+id/emptyState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="72dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_analytics_empty" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="4dp"
+                        android:text="@string/deepdive_empty_state"
+                        android:textColor="@color/on_surface_muted"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <!-- ===== תוכן ===== -->
+                <LinearLayout
+                    android:id="@+id/contentGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- כרטיס סיכום KPI עם מפרידים -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_hero_card"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:paddingVertical="18dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="8dp">
+
+                            <TextView
+                                android:id="@+id/tvKpiCurrentLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/deepdive_current_month"
+                                android:textAppearance="@style/TextAppearance.Capitall.MetricLabel" />
+
+                            <TextView
+                                android:id="@+id/tvKpiCurrent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:textColor="@color/on_surface"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                tools:text="₪1,240" />
+
+                            <TextView
+                                android:id="@+id/tvKpiCurrentSub"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textColor="@color/on_surface_muted"
+                                android:textSize="11sp"
+                                tools:text="8 transactions" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/hairline" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="8dp">
+
+                            <TextView
+                                android:id="@+id/tvKpiAvgLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/deepdive_historical_average"
+                                android:textAppearance="@style/TextAppearance.Capitall.MetricLabel" />
+
+                            <TextView
+                                android:id="@+id/tvKpiAvg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:textColor="@color/accent_blue"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                tools:text="₪980" />
+
+                            <TextView
+                                android:id="@+id/tvKpiAvgSub"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/deepdive_kpi_per_month"
+                                android:textColor="@color/on_surface_muted"
+                                android:textSize="11sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/hairline" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="8dp">
+
+                            <TextView
+                                android:id="@+id/tvKpiPeakLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/deepdive_all_time_peak"
+                                android:textAppearance="@style/TextAppearance.Capitall.MetricLabel" />
+
+                            <TextView
+                                android:id="@+id/tvKpiPeak"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:textColor="@color/red_negative"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                tools:text="₪2,100" />
+
+                            <TextView
+                                android:id="@+id/tvKpiPeakSub"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textColor="@color/on_surface_muted"
+                                android:textSize="11sp"
+                                tools:text="Mar" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- שורת מתג: קו תקציב -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_hero_card"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/deepdive_budget_toggle_title"
+                                android:textColor="@color/on_surface"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/deepdive_budget_toggle_desc"
+                                android:textColor="@color/on_surface_muted"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/switchBudgetLine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:checked="true"
+                            app:thumbTint="@color/surface_card"
+                            app:trackTint="@color/accent_blue" />
+
+                    </LinearLayout>
+
+                    <!-- צ'יפים מקטעים: טווח זמן -->
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroupRange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        app:selectionRequired="true"
+                        app:singleLine="true"
+                        app:singleSelection="true">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip3"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/deepdive_range_3m"
+                            android:textColor="@color/chip_text_deepdive"
+                            app:checkedIconVisible="false"
+                            app:chipBackgroundColor="@color/chip_bg_deepdive"
+                            app:chipStrokeColor="@color/hairline"
+                            app:chipStrokeWidth="1dp" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip6"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/deepdive_range_6m"
+                            android:textColor="@color/chip_text_deepdive"
+                            app:checkedIconVisible="false"
+                            app:chipBackgroundColor="@color/chip_bg_deepdive"
+                            app:chipStrokeColor="@color/hairline"
+                            app:chipStrokeWidth="1dp" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip12"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/deepdive_range_12m"
+                            android:textColor="@color/chip_text_deepdive"
+                            app:checkedIconVisible="false"
+                            app:chipBackgroundColor="@color/chip_bg_deepdive"
+                            app:chipStrokeColor="@color/hairline"
+                            app:chipStrokeWidth="1dp" />
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                    <!-- מגמת הוצאות -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="18dp"
+                            android:background="@drawable/bg_section_accent" />
+
+                        <TextView
+                            android:id="@+id/tvTrendTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/deepdive_trend_title"
+                            android:textAppearance="@style/TextAppearance.Capitall.SectionTitle" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/tvTrendCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/on_surface_muted"
+                            android:textSize="13sp"
+                            tools:text="12 items" />
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/Widget.Capitall.Card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp">
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/trendChart"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:padding="12dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- 50/50 תחתון -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="24dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardPatterns"
+                            style="@style/Widget.Capitall.Card"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="6dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="16dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/deepdive_patterns_title"
+                                    android:textColor="@color/accent_blue"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                                <com.github.mikephil.charting.charts.BarChart
+                                    android:id="@+id/weekdayChart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="12dp" />
+
+                                <TextView
+                                    android:id="@+id/tvWeekdayInsight"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:lineSpacingExtra="2dp"
+                                    android:textColor="@color/on_surface_muted"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            style="@style/Widget.Capitall.Card"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="16dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvContributorsTitle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/deepdive_contributors_title"
+                                        android:textColor="@color/accent_blue"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvContributorsCount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/on_surface_muted"
+                                        android:textSize="11sp"
+                                        tools:text="5 items" />
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recyclerViewContributors"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:nestedScrollingEnabled="false" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/accent_blue"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/errorState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="32dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/error_load_failed"
+            android:textColor="@color/on_surface_muted"
+            android:textSize="14sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRetry"
+            style="@style/Widget.Capitall.Button.Secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/action_retry" />
+
+    </LinearLayout>
+
+    <!-- פינה שמאלית-תחתונה, זהה לכפתור ההוספה בדשבורד (ראה ההערה שם לגבי left) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/deepdive_add_transaction"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/accent_blue"
+        app:tint="@color/surface_base"
+        tools:ignore="RtlHardcoded" />
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "166993073418",
+    "project_id": "capitall32",
+    "storage_bucket": "capitall32.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166993073418:android:47ca436c8a048bc5a716f3",
+        "android_client_info": {
+          "package_name": "com.shai.capitall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166993073418-9n8mfa9uc9qg8kg83ponvl9p40se6s0o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shai.capitall",
+            "certificate_hash": "61c209718971eade455f191e106922ccecffebf5"
+          }
+        },
+        {
+          "client_id": "166993073418-lrruqf8crc30bdpmup2qhv7njekge6s0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoKWN00v6vK-GY5RTEa9npI0zny_lmP6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166993073418-lrruqf8crc30bdpmup2qhv7njekge6s0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

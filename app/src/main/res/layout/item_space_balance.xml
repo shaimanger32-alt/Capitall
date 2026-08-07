@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- מאזן חבר בתיק: כמה הוציא, וכמה מגיע לו / הוא חייב -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="42dp"
+    android:orientation="horizontal"
+    android:paddingVertical="5dp">
+
+    <TextView
+        android:id="@+id/tvMemberName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/on_surface"
+        android:textSize="14sp"
+        tools:text="שי" />
+
+    <TextView
+        android:id="@+id/tvMemberOutlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/on_surface_muted"
+        android:textSize="12.5sp"
+        tools:text="שילם ₪2,900" />
+
+    <TextView
+        android:id="@+id/tvMemberNet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:gravity="end"
+        android:minWidth="88dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="+₪795" />
+
+</LinearLayout>

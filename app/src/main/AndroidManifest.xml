@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".CapitallApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Capitall"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:theme="@style/Theme.Capitall.Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:theme="@style/Theme.Capitall.Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ui.addtransaction.AddTransactionActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.addasset.AddAssetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.selectcategory.SelectCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.addstock.AddStockActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.addcrypto.AddCryptoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.screener.ScreenerActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.portfolio.PortfolioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.categorydetail.CategoryDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.stockportfolio.StockPortfolioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.deepdive.DeepDiveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.csvimport.ImportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.spaces.SpacesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.spaces.SpaceDetailActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

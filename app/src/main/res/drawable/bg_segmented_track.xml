@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- מסילת ה-Segmented Control: גלולה אפרפרה שעליה "בוהן" לבנה נבחרת -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/surface_elevated" />
+    <corners android:radius="24dp" />
+</shape>

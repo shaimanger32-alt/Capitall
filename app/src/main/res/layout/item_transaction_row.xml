@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="52dp"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="14dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tvRowDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:textColor="@color/on_surface_muted"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvRowMerchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/on_surface"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRowCategoryBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/badge_background"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivRowPaymentIcon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_weight="0.6"
+        android:src="@android:drawable/ic_menu_manage"
+        app:tint="@color/on_surface_muted"
+        xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+    <TextView
+        android:id="@+id/tvRowAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:gravity="end"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

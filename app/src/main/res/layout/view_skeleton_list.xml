@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  מצייני-מקום לטעינה (skeleton): שלוש שורות בצורת שורת הרשימה האמיתית.
+  עדיף על ספינר — המשתמש רואה מיד את מבנה התוכן שנטען ולא מסך ריק.
+  הפעימה מופעלת בקוד (startPulse) ב-UiAnimations.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/skeletonRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/space_lg"
+    android:paddingTop="@dimen/space_sm">
+
+    <include layout="@layout/view_skeleton_row" />
+    <include layout="@layout/view_skeleton_row" />
+    <include layout="@layout/view_skeleton_row" />
+
+</LinearLayout>

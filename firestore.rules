@@ -1,0 +1,76 @@
+rules_version = '2';
+
+// חוקי אבטחה ל-Capitall: כל משתמש מאומת ניגש אך ורק לנתונים שלו.
+// פריסה: firebase deploy --only firestore:rules  (או דרך קונסולת Firebase → Firestore → Rules)
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // מסמך המשתמש: מזהה המסמך הוא ה-uid
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // אוסף שבו כל מסמך נושא שדה userId — הבעלים בלבד קורא/כותב
+    function isOwner() {
+      return request.auth != null && resource.data.userId == request.auth.uid;
+    }
+    // ביצירה עדיין אין resource קיים — בודקים את המסמך הנכנס
+    function creatingOwn() {
+      return request.auth != null && request.resource.data.userId == request.auth.uid;
+    }
+
+    match /assets/{docId} {
+      allow read, update, delete: if isOwner();
+      allow create: if creatingOwn();
+    }
+    match /liabilities/{docId} {
+      allow read, update, delete: if isOwner();
+      allow create: if creatingOwn();
+    }
+    match /snapshots/{docId} {
+      allow read, update, delete: if isOwner();
+      allow create: if creatingOwn();
+    }
+    // ===== תיקים משותפים =====
+    // מזהה המסמך הוא קוד ההזמנה. get מותר לכל מאומת — כדי להצטרף צריך לדעת את הקוד
+    // המדויק; list מוגבל לתיקים שאתה כבר חבר בהם, ולכן אי אפשר לסרוק תיקים של אחרים.
+    match /spaces/{spaceId} {
+      allow get: if request.auth != null;
+      allow list: if request.auth != null && request.auth.uid in resource.data.memberIds;
+      allow create: if request.auth != null
+                    && request.resource.data.ownerId == request.auth.uid
+                    && request.resource.data.memberIds == [request.auth.uid];
+      // עדכון מותר לחבר קיים, או למי שמוסיף רק את עצמו (הצטרפות בקוד)
+      allow update: if request.auth != null && (
+                      request.auth.uid in resource.data.memberIds
+                      || request.resource.data.memberIds == resource.data.memberIds.concat([request.auth.uid])
+                    );
+      allow delete: if request.auth != null && resource.data.ownerId == request.auth.uid;
+    }
+
+    function isSpaceMember(spaceId) {
+      return spaceId is string && spaceId != ''
+             && request.auth.uid in get(/databases/$(database)/documents/spaces/$(spaceId)).data.memberIds;
+    }
+
+    // עסקה שייכת לתיק אישי (spaceId ריק/חסר) או לתיק משותף.
+    // בתיק משותף כל חבר רואה הכול; מחיקה ועריכה שמורות למי שיצר את הרשומה.
+    match /transactions/{docId} {
+      allow read: if isOwner()
+                  || (request.auth != null && isSpaceMember(resource.data.get('spaceId', '')));
+      allow update, delete: if isOwner();
+      allow create: if creatingOwn()
+                    && (request.resource.data.get('spaceId', '') == ''
+                        || isSpaceMember(request.resource.data.spaceId));
+    }
+    match /categories/{docId} {
+      allow read, update, delete: if isOwner();
+      allow create: if creatingOwn();
+    }
+
+    // ברירת מחדל: חסום כל גישה אחרת
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

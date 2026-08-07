@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- קוד ההזמנה בגדול, לקריאה בקול או להעתקה -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="4dp">
+
+    <TextView
+        android:id="@+id/tvInviteSpaceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/on_surface_muted"
+        android:textSize="14sp"
+        tools:text="הדירה שלנו" />
+
+    <!-- לחיצה על הקוד עצמו מעתיקה — הדרך הכי מהירה -->
+    <TextView
+        android:id="@+id/tvInviteCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/badge_background"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.22"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="14dp"
+        android:textColor="@color/accent_blue"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:text="K7QM24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/space_invite_hint"
+        android:textColor="@color/on_surface_muted"
+        android:textSize="13sp" />
+
+</LinearLayout>

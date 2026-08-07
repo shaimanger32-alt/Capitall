@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- סגירת המסך העליון: ירידה החוצה -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:interpolator/accelerate_quad">
+    <translate android:fromYDelta="0" android:toYDelta="4%p" android:duration="240" />
+    <alpha android:fromAlpha="1" android:toAlpha="0" android:duration="200" />
+</set>

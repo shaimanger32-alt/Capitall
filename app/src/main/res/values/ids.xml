@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- מזהי tag לשמירת מצב אנימציה על View (ראה UiAnimations.kt) -->
+    <item name="tag_animated_value" type="id" />
+    <item name="tag_value_animator" type="id" />
+</resources>

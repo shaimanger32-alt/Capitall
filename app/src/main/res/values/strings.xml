@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Capitall</string>
+    <string name="default_web_client_id">השאירו כאן את המחרוזת הקיימת שלכם - לא לגעת</string>
+
+    <string name="nav_open">Open navigation menu</string>
+    <string name="nav_close">Close navigation menu</string>
+
+    <!-- Login -->
+    <string name="login_tagline">Your entire financial life as one stock chart.</string>
+    <string name="login_sign_in_hint">Sign in to continue</string>
+    <string name="login_welcome">Welcome</string>
+    <string name="login_google_button">Continue with Google</string>
+    <string name="login_feature_track">Track every asset in real time</string>
+    <string name="login_feature_insights">Smart insights on your net worth</string>
+    <string name="login_feature_secure">Private &amp; secured with Google</string>
+    <string name="login_terms">By continuing you agree to our Terms &amp; Privacy Policy</string>
+
+    <!-- Drawer -->
+    <string name="drawer_dashboard">Dashboard</string>
+    <string name="drawer_portfolio">Transaction Screener</string>
+    <string name="drawer_assets">My Assets &amp; Liabilities</string>
+    <string name="drawer_deepdive">Deep-Dive Analysis</string>
+    <string name="drawer_settings_header">SETTINGS</string>
+    <string name="drawer_settings">Settings</string>
+    <string name="drawer_language">Language</string>
+    <string name="drawer_sign_out">Sign Out</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_toolbar_title">Capitall</string>
+    <string name="dashboard_chart_net_worth">Net Worth</string>
+    <string name="dashboard_chart_total_income">Total Income</string>
+    <string name="dashboard_chart_select_title">Select Chart View</string>
+    <string name="dashboard_chart_no_data">No data yet — add an asset or liability to see your trend</string>
+    <string name="dashboard_chart_range_select_title">Select Time Range</string>
+    <string name="dashboard_chart_range_day">Day</string>
+    <string name="dashboard_chart_range_week">Week</string>
+    <string name="dashboard_chart_range_month">Month</string>
+    <string name="dashboard_chart_range_year">Year</string>
+    <string name="dashboard_chart_range_all">All</string>
+    <string name="dashboard_search_hint">Search transactions, merchants, or categories…</string>
+    <string name="dashboard_net_worth_label">Net Worth</string>
+    <string name="dashboard_assets_label">Assets</string>
+    <string name="dashboard_cash_label">Cash</string>
+    <string name="dashboard_liabilities_label">Liabilities</string>
+    <string name="dashboard_overview_title">Overview</string>
+    <string name="dashboard_cashflow_title">Cash Flow (6 months)</string>
+    <string name="dashboard_allocation_title">Asset Allocation</string>
+    <string name="dashboard_insights_title">Smart Cash Flow Insights</string>
+    <string name="insight_top_expense">%1$s is your biggest expense this month (%2$s)</string>
+    <string name="insight_savings">You saved %1$d%% of your income this month</string>
+    <string name="insight_overspending">Your expenses exceeded your income this month</string>
+    <string name="insight_recurring">%1$d recurring payments active</string>
+    <string name="dashboard_transactions_title">Recent Transactions</string>
+    <string name="dashboard_transactions_view_all">View all</string>
+    <string name="dashboard_add_asset_desc">Add</string>
+    <string name="dashboard_add_choose_title">What would you like to add?</string>
+    <string name="dashboard_add_transaction_option">Transaction (income / expense)</string>
+    <string name="dashboard_add_asset_option">Asset or liability</string>
+    <string name="add_chooser_transaction_desc">Money in or out, right now</string>
+    <string name="add_chooser_transaction_examples">Salary · Groceries · Bills · Transfer</string>
+    <string name="add_chooser_asset_desc">Something you hold over time</string>
+    <string name="add_chooser_asset_examples">Property · Stocks · Savings · Mortgage · Loan</string>
+    <string name="add_transaction_subtitle">Income or expense — affects your cash balance</string>
+    <string name="add_entry_subtitle">Something you own or owe — part of your net worth</string>
+    <string name="dashboard_networth_chart_desc">Net worth trend over time</string>
+    <string name="dashboard_cashflow_chart_desc">Cash flow bar chart for the last six months</string>
+    <string name="dashboard_allocation_chart_desc">Asset allocation breakdown by category</string>
+
+    <!-- KPI Labels -->
+    <string name="kpi_liquid_net_worth">LIQUID NET WORTH</string>
+    <string name="kpi_monthly_income">MONTHLY INCOME</string>
+    <string name="kpi_monthly_expenses">MONTHLY EXPENSES</string>
+    <string name="kpi_savings_rate">SAVINGS RATE</string>
+    <string name="kpi_savings_rate_value">%1$d%% Saved</string>
+    <string name="kpi_recurring_income">RECURRING INCOME</string>
+    <string name="kpi_recurring_payments">RECURRING PAYMENTS</string>
+
+    <!-- Categories -->
+    <string name="category_transport">Transport</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="category_health">Health</string>
+    <!-- General (consolidated) transaction categories -->
+    <string name="category_food">Food</string>
+    <string name="category_housing_bills">Housing &amp; Bills</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_other_expense">Other</string>
+    <!-- General income categories -->
+    <string name="category_salary">Salary</string>
+    <string name="category_business_income">Business / Freelance</string>
+    <string name="category_investment_income">Investments</string>
+    <string name="category_rent_income">Rental Income</string>
+    <string name="category_gift_income">Gift</string>
+    <string name="category_income_other">Other Income</string>
+    <string name="category_real_estate">Real Estate</string>
+    <string name="category_stocks_investments">Stocks &amp; Investments</string>
+    <string name="category_cash_savings">Cash &amp; Savings</string>
+    <string name="category_vehicle">Vehicle</string>
+    <string name="category_crypto">Crypto</string>
+    <string name="category_pension_retirement">Pension / Retirement</string>
+    <string name="category_other_assets">Other Assets</string>
+    <string name="category_business_equity">Business Equity</string>
+    <string name="category_bonds">Bonds</string>
+    <string name="category_foreign_currency">Foreign Currency</string>
+    <string name="category_mortgage">Mortgage</string>
+    <string name="category_loan">Loan</string>
+    <string name="category_credit_card">Credit Card</string>
+    <string name="category_student_loan">Student Loan</string>
+    <string name="category_credit_line">Credit Line / Overdraft</string>
+    <string name="category_other_liabilities">Other Liabilities</string>
+
+    <!-- Category picker groups -->
+    <string name="category_group_cash">Cash Equivalents</string>
+    <string name="category_group_investment">Investment</string>
+    <string name="category_group_property">Property</string>
+    <string name="category_group_other">Other Assets</string>
+    <string name="category_group_liability">Liability</string>
+    <string name="select_category_title">Add Account</string>
+
+    <!-- Category recurring options -->
+    <string name="category_option_rental_income">Rental Income (Monthly)</string>
+    <string name="category_option_dividend_income">Dividends (Monthly est.)</string>
+    <string name="category_option_interest_income">Interest (Monthly est.)</string>
+    <string name="category_option_monthly_payment">Monthly Payment</string>
+
+    <!-- Ticker -->
+    <string name="ticker_current_balance">CURRENT BALANCE</string>
+    <string name="ticker_month_expenses">THIS MONTH\'S EXPENSES</string>
+    <string name="ticker_projected_balance">PROJECTED EOM BALANCE</string>
+
+    <!-- Portfolio -->
+    <string name="portfolio_title">Portfolio</string>
+    <!-- מצבי ריק מונחי-פעולה -->
+    <string name="empty_portfolio_title">Build your balance sheet</string>
+    <string name="empty_portfolio_body">Add what you own and what you owe to see your net worth come together.</string>
+    <string name="empty_portfolio_action">Add your first entry</string>
+    <string name="empty_stocks_title">No holdings yet</string>
+    <string name="empty_stocks_body">Add a stock and Capitall will track its live market value for you.</string>
+    <string name="empty_category_title">Nothing here yet</string>
+    <string name="empty_category_body">Entries you add in this category will show up here.</string>
+    <string name="portfolio_delete_title">Delete %1$s?</string>
+    <string name="portfolio_delete_message">This action cannot be undone.</string>
+    <string name="portfolio_delete_confirm">Delete</string>
+    <string name="portfolio_delete_cancel">Cancel</string>
+    <string name="portfolio_category_with_recurring">%1$s · %2$s: %3$s/mo</string>
+
+    <plurals name="portfolio_category_item_count">
+        <item quantity="one">%1$d item</item>
+        <item quantity="other">%1$d items</item>
+    </plurals>
+
+    <!-- Stock Portfolio -->
+    <string name="stock_portfolio_title">Stock Portfolio</string>
+    <string name="stock_portfolio_error_load_failed">Failed to load stock prices</string>
+    <string name="stock_portfolio_total_invested_label">TOTAL INVESTED</string>
+    <string name="stock_portfolio_current_value_label">CURRENT VALUE</string>
+    <string name="stock_portfolio_total_gain_loss_label">TOTAL GAIN / LOSS</string>
+    <string name="stock_portfolio_gain_loss_format">%1$s (%2$s)</string>
+    <string name="crypto_portfolio_title">Crypto Portfolio</string>
+    <string name="crypto_portfolio_empty_state">No crypto yet — add one from the Crypto category</string>
+    <string name="stock_portfolio_ils_equivalent">≈ %1$s</string>
+    <string name="stock_portfolio_fx_rate">Exchange rate: %1$s / $1</string>
+    <string name="stock_portfolio_quantity_format">Qty: %1$s</string>
+    <string name="stock_portfolio_avg_cost_format">Avg Cost: %1$s</string>
+    <string name="stock_portfolio_current_price_format">Price: %1$s</string>
+
+    <!-- Stock Chart -->
+    <string name="stock_chart_error_load_failed">Failed to load chart data</string>
+    <string name="stock_chart_range_1d" translatable="false">1D</string>
+    <string name="stock_chart_range_1w" translatable="false">1W</string>
+    <string name="stock_chart_range_1m" translatable="false">1M</string>
+    <string name="stock_chart_range_6m" translatable="false">6M</string>
+    <string name="stock_chart_range_1y" translatable="false">1Y</string>
+    <string name="stock_chart_range_5y" translatable="false">5Y</string>
+    <string name="stock_chart_range_max" translatable="false">MAX</string>
+
+    <!-- Add Asset / Liability -->
+    <string name="add_entry_title">Add Entry</string>
+    <string name="add_entry_type_asset">Asset</string>
+    <string name="add_entry_type_liability">Liability</string>
+    <string name="add_entry_name_hint">Name</string>
+    <string name="add_entry_category_hint">Category</string>
+    <string name="add_entry_value_hint">Value (₪)</string>
+    <string name="add_entry_value_hint_currency">Amount (%1$s)</string>
+    <string name="add_entry_currency_label">CURRENCY</string>
+    <string name="add_entry_currency_conversion">≈ %1$s (rate %2$s)</string>
+    <string name="dashboard_toggle_balance_desc">Show or hide net worth</string>
+    <string name="dashboard_balance_hidden">••••••</string>
+    <string name="add_entry_date_hint">Date</string>
+    <string name="add_entry_rate_hint">Annual change rate</string>
+    <string name="add_entry_rate_helper">Category average — adjust if you want</string>
+    <string name="add_entry_term_hint">Loan term (years)</string>
+    <string name="add_entry_term_helper">Used to amortize the balance down over time</string>
+    <string name="add_entry_save">Save</string>
+    <string name="add_entry_saved_success">Saved successfully</string>
+    <string name="add_entry_error_no_user">User not logged in</string>
+    <string name="add_entry_error_no_name">Please enter a name</string>
+    <string name="add_entry_error_invalid_value">Please enter a valid amount</string>
+    <string name="add_entry_search_stock_button">Search Stock by Symbol</string>
+
+    <!-- Add Stock -->
+    <string name="add_stock_title">Add Stock</string>
+    <string name="add_stock_search_hint">Search by symbol (e.g. AAPL)</string>
+    <string name="add_stock_quantity_hint">Quantity</string>
+    <string name="add_stock_purchase_price_hint">Purchase Price per Share ($)</string>
+    <string name="add_stock_current_price_label">Current price: %1$s</string>
+    <string name="add_stock_change_selection">Change Selection</string>
+    <string name="add_stock_error_no_selection">Please select a stock first</string>
+    <string name="add_stock_continue">Continue</string>
+    <string name="add_stock_pick_date_hint">Stock added — pick the purchase date and tap Save</string>
+
+    <!-- Add Crypto -->
+    <string name="add_crypto_title">Add Crypto</string>
+    <string name="add_crypto_select_coin">Select coin</string>
+    <string name="add_crypto_quantity_hint">Quantity</string>
+    <string name="add_crypto_purchase_price_hint">Purchase price per coin ($)</string>
+    <string name="add_crypto_search_button">Add a Coin</string>
+    <string name="add_crypto_pick_date_hint">Coin added — pick the purchase date and tap Save</string>
+
+    <!-- Language picker -->
+    <string name="language_picker_title">Choose Language</string>
+    <string name="language_english">English</string>
+    <string name="language_hebrew">עברית</string>
+
+    <!-- Shared states -->
+    <string name="error_load_failed">Couldn\'t load data. Check your connection and try again.</string>
+    <string name="action_retry">Retry</string>
+
+    <!-- Search -->
+    <string name="search_title">Search</string>
+    <string name="search_empty">No results found</string>
+    <string name="search_hint_typing">Type to search transactions and assets</string>
+    <string name="search_kind_transaction">Transaction</string>
+    <string name="search_kind_asset">Asset</string>
+    <string name="search_kind_liability">Liability</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_account_header">ACCOUNT</string>
+    <string name="settings_preferences_header">PREFERENCES</string>
+    <string name="settings_about_header">ABOUT</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_theme_value">Light</string>
+    <string name="settings_currency">Display currency</string>
+    <string name="settings_currency_note">Amounts are managed in ₪ and converted for display at the live rate</string>
+    <string name="settings_currency_ils">Shekel (₪)</string>
+    <string name="settings_currency_usd">Dollar ($)</string>
+    <string name="settings_currency_eur">Euro (€)</string>
+    <string name="settings_currency_picker_title">Display currency</string>
+    <string name="settings_hide_balance">Hide balances</string>
+    <string name="settings_hide_balance_note">Masks the net worth on the dashboard (like the eye button)</string>
+    <string name="settings_version">Version</string>
+    <string name="settings_sign_out">Sign out</string>
+
+    <!-- Transaction Screener -->
+    <string name="screener_title">Transaction Screener</string>
+    <string name="screener_filter_date_all">All Time</string>
+    <string name="screener_filter_date_month">This Month</string>
+    <string name="screener_filter_date_quarter">Last Quarter</string>
+    <string name="screener_filter_date_ytd">Year to Date</string>
+    <string name="screener_filter_categories">Categories</string>
+    <string name="screener_type_all">All</string>
+    <string name="screener_type_expenses">Expenses</string>
+    <string name="screener_type_income">Income</string>
+    <string name="screener_min_amount">Min ₪</string>
+    <string name="screener_max_amount">Max ₪</string>
+    <string name="screener_clear_all">Clear All</string>
+    <string name="screener_stats_strip">Found %1$d transactions  |  Total Expense: %2$s  |  Average: %3$s</string>
+    <string name="screener_col_date">Date</string>
+    <string name="screener_col_merchant">Merchant</string>
+    <string name="screener_col_amount">Amount</string>
+    <string name="screener_detail_category">Category</string>
+    <string name="screener_detail_notes">Notes</string>
+    <string name="screener_detail_recurring">Recurring Payment</string>
+    <string name="screener_detail_close">Close</string>
+    <string name="screener_detail_delete">Delete Transaction</string>
+
+    <!-- Deep-Dive Analysis -->
+    <string name="deepdive_current_month">CURRENT MONTH</string>
+    <string name="deepdive_historical_average">HISTORICAL AVG</string>
+    <string name="deepdive_all_time_peak">ALL-TIME PEAK</string>
+    <string name="deepdive_trend_title">Spending Trend</string>
+    <string name="deepdive_actual_spending">Actual Spending</string>
+    <string name="deepdive_budget_line">Budget Threshold</string>
+    <string name="deepdive_patterns_title">Behavioral Patterns</string>
+    <string name="deepdive_contributors_title">Top Contributors</string>
+    <string name="deepdive_weekday_insight">%1$d%% of your spending in this category occurs from Thursday evening to Saturday</string>
+    <string name="deepdive_choose_category">Choose a category to analyze</string>
+    <string name="deepdive_empty_state">No transactions yet in this category.\nAdd a transaction to see the analysis.</string>
+    <string name="deepdive_badge">Analysis</string>
+    <string name="deepdive_subtitle">Deep-dive into your spending</string>
+    <string name="deepdive_transactions_count">%1$d transactions</string>
+    <string name="deepdive_kpi_per_month">per month</string>
+    <string name="deepdive_budget_toggle_title">Budget reference line</string>
+    <string name="deepdive_budget_toggle_desc">Show the average as a reference line on the trend chart</string>
+    <string name="deepdive_items">%1$d items</string>
+    <string name="deepdive_info_title">About this analysis</string>
+    <string name="deepdive_info_message">This screen breaks down your spending in the selected category — monthly trend versus your average, top merchants, and which weekdays you spend the most.</string>
+    <string name="deepdive_add_transaction">Add transaction</string>
+    <string name="deepdive_current_value">CURRENT VALUE</string>
+    <string name="deepdive_average_value">AVERAGE VALUE</string>
+    <string name="deepdive_peak_value">PEAK VALUE</string>
+    <string name="deepdive_value_trend_title">Value Trend</string>
+    <string name="deepdive_holdings_title">Top Holdings</string>
+    <string name="deepdive_holdings_count">%1$d holdings</string>
+    <string name="deepdive_subtitle_stocks">Deep-dive into your stock portfolio</string>
+    <string name="deepdive_info_message_stocks">This screen breaks down your stock portfolio — the market-value trend in shekels (converted from USD), which holdings weigh the most, and your average and peak value.</string>
+    <string name="deepdive_range_3m" translatable="false">3M</string>
+    <string name="deepdive_range_6m" translatable="false">6M</string>
+    <string name="deepdive_range_12m" translatable="false">1Y</string>
+
+    <string name="weekday_sun">Sun</string>
+    <string name="weekday_mon">Mon</string>
+    <string name="weekday_tue">Tue</string>
+    <string name="weekday_wed">Wed</string>
+    <string name="weekday_thu">Thu</string>
+    <string name="weekday_fri">Fri</string>
+    <string name="weekday_sat">Sat</string>
+
+    <!-- Add Transaction -->
+    <string name="add_transaction_title">Add Transaction</string>
+    <string name="add_transaction_merchant_hint">Merchant / Description</string>
+    <string name="add_transaction_category_label">Category</string>
+    <string name="add_transaction_payment_label">Payment Method</string>
+    <string name="add_transaction_date_label">Date</string>
+    <string name="add_transaction_add_category_desc">Add new category</string>
+    <string name="add_transaction_new_category_title">New Category Name</string>
+    <string name="add_transaction_error_no_merchant">Please enter a merchant name</string>
+    <string name="add_transaction_error_no_category">Please select a category</string>
+    <string name="add_transaction_error_save_failed">Failed to save transaction</string>
+
+    <string name="payment_card">Card</string>
+
+    <string name="payment_cash">Cash</string>
+    <string name="payment_bank_transfer">Bank Transfer</string>
+    <string name="payment_direct_debit">Direct Debit</string>
+
+    <!-- CSV Import -->
+    <string name="import_title">Import from file</string>
+    <string name="import_intro_title">Import your bank statement</string>
+    <string name="import_intro_body">Pick a statement you downloaded from your bank or credit card — PDF or CSV — and Capitall will read the transactions and categorise them for you.</string>
+    <string name="import_how_header">How it works</string>
+    <string name="import_how_body">1. Download a statement from your bank or credit card website, as PDF or CSV.\n2. Pick the file here — columns are detected automatically.\n3. Categories are filled in from your own history, so the more you use Capitall the better it gets.\n4. Transactions you already have are flagged and skipped, so importing twice is safe.</string>
+    <string name="import_pick_file">Choose a file</string>
+    <string name="import_parsing">Reading the file…</string>
+    <string name="import_saving">Importing transactions…</string>
+
+    <string name="import_summary_selected">%1$d of %2$d rows selected</string>
+    <string name="import_summary_duplicates">%1$d already imported</string>
+    <string name="import_summary_review">%1$d need review</string>
+    <string name="import_summary_skipped">%1$d rows unreadable</string>
+    <string name="import_summary_total">Total %1$s</string>
+    <string name="import_select_all">Select all</string>
+    <string name="import_select_none">Clear</string>
+    <string name="import_flip_signs">Flip signs</string>
+    <string name="import_category_picker_title">Choose a category</string>
+    <string name="import_row_needs_review">REVIEW</string>
+    <string name="import_row_duplicate">ALREADY IMPORTED</string>
+    <string name="import_unknown_merchant">Unnamed transaction</string>
+
+    <plurals name="import_confirm_button">
+        <item quantity="one">Import 1 transaction</item>
+        <item quantity="other">Import %1$d transactions</item>
+    </plurals>
+    <plurals name="import_done">
+        <item quantity="one">1 transaction imported</item>
+        <item quantity="other">%1$d transactions imported</item>
+    </plurals>
+
+    <string name="import_error_title">Could not import</string>
+    <string name="import_error_empty">The file is empty.</string>
+    <string name="import_error_no_header">Could not find a date and amount column in this file. Make sure you exported a CSV statement and not a summary report.</string>
+    <string name="import_error_no_rows">No transactions could be read from this file.</string>
+    <string name="import_error_spreadsheet">This is an Excel file, not a CSV. Open it on a computer and save it as “CSV UTF-8”, then import that file.</string>
+    <string name="import_error_pdf_locked">This PDF is password protected. Open it on a computer, save a copy without the password, and import that.</string>
+    <string name="import_error_pdf_unreadable">No text could be read from this PDF. If it is a scanned page (an image) there is nothing to import — export a statement or CSV from your bank instead.</string>
+    <string name="import_error_unreadable">The file could not be read. It may be too large or in an unsupported format.</string>
+    <string name="import_error_load_history">Could not load your existing transactions. Check your connection and try again.</string>
+    <string name="import_error_save_failed">Failed to save the imported transactions.</string>
+    <string name="import_error_nothing_selected">Select at least one row to import.</string>
+
+    <!-- Shared spaces -->
+    <string name="spaces_title">Shared spaces</string>
+    <string name="spaces_intro">A shared space is a joint ledger for expenses and income. Everything you already track stays private — only what you add inside a space is visible to its members.</string>
+    <string name="spaces_my_spaces">MY SPACES</string>
+    <string name="spaces_create">Create space</string>
+    <string name="spaces_create_body">Give it a name your partners will recognise. You will get a code to invite them with.</string>
+    <string name="spaces_create_confirm">Create</string>
+    <string name="spaces_name_hint">Space name (e.g. “Our apartment”)</string>
+    <string name="spaces_join">Join with code</string>
+    <string name="spaces_join_body">Enter the 6-character code you received.</string>
+    <string name="spaces_join_confirm">Join</string>
+    <string name="spaces_code_hint">Invite code</string>
+    <string name="spaces_created">Space created. Invite code: %1$s</string>
+    <string name="spaces_joined">Joined “%1$s”</string>
+    <string name="spaces_already_member">You are already a member of “%1$s”</string>
+    <string name="spaces_error_name_required">Please enter a name for the space</string>
+    <string name="spaces_error_create_failed">Could not create the space. Try again.</string>
+    <string name="spaces_error_code_not_found">No space found with that code</string>
+    <string name="spaces_error_join_failed">Could not join. Check your connection and try again.</string>
+    <string name="spaces_error_permission">The server refused the request. The shared-space permission rules are not live — deploy them in Firebase.</string>
+    <string name="spaces_empty_title">Split with someone</string>
+    <string name="spaces_empty_body">Create a shared space for rent, groceries or a trip — and see at a glance who paid what and who owes whom.</string>
+
+    <string name="space_total_expenses">TOTAL SPENT</string>
+    <string name="space_total_income">TOTAL RECEIVED</string>
+    <string name="space_balances">BALANCES</string>
+    <string name="space_ledger">LEDGER</string>
+    <string name="space_member_paid">paid %1$s</string>
+    <string name="space_settled">settled</string>
+    <string name="space_settlement_line">%1$s pays %2$s %3$s</string>
+    <string name="space_paid_by_on">%1$s paid · %2$s</string>
+    <string name="space_add_transaction">Add to space</string>
+    <string name="space_save">Save</string>
+    <string name="space_type_expense">Expense</string>
+    <string name="space_type_income">Income</string>
+    <string name="space_amount_hint">Amount</string>
+    <string name="space_paid_by">PAID BY</string>
+    <string name="space_empty_title">Nothing here yet</string>
+    <string name="space_empty_body">Add the first shared expense and the balances will work themselves out.</string>
+    <string name="space_invite_title">Invite code</string>
+    <string name="space_invite_hint">Send this code to whoever you want to add. They enter it under “Shared spaces” → “Join with code”.</string>
+    <string name="space_invite_copy">Copy</string>
+    <string name="space_invite_share">Share</string>
+    <string name="space_invite_close">Close</string>
+    <string name="space_invite_copied">Code copied</string>
+    <string name="space_invite_share_text">Join my shared space “%1$s” on Capitall. Invite code: %2$s</string>
+    <string name="space_leave">Leave space</string>
+    <string name="space_leave_body">You will stop seeing this ledger. Entries you added stay in the space, so the others’ balances remain correct.</string>
+    <string name="space_delete">Delete space</string>
+    <string name="space_delete_body">This deletes the space and all of its entries for everyone. This cannot be undone.</string>
+    <string name="space_delete_transaction">Delete entry</string>
+    <string name="space_delete_transaction_body">Remove “%1$s” from the shared ledger?</string>
+    <string name="space_no_longer_member">You are no longer a member of this space</string>
+    <string name="space_action_failed">That did not work. Check your connection and try again.</string>
+    <string name="drawer_spaces">Shared spaces</string>
+
+    <string name="settings_data_header">DATA</string>
+    <string name="settings_import">Import from bank file</string>
+    <string name="settings_import_note">Load transactions from a CSV statement</string>
+</resources>

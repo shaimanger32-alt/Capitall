@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- כרטיס KPI בדשבורד: תווית קטנה מעל מספר דומיננטי, עם פס אקסנט עדין בראש -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_xs"
+    app:cardBackgroundColor="@color/surface_card"
+    app:cardCornerRadius="@dimen/radius_md"
+    app:cardElevation="@dimen/elevation_flat"
+    app:strokeColor="@color/hairline"
+    app:strokeWidth="@dimen/hairline">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/space_lg"
+        android:paddingVertical="@dimen/space_lg">
+
+        <!-- פס אקסנט קצר — סימון ויזואלי עדין במקום מסגרת צבעונית מלאה -->
+        <View
+            android:id="@+id/kpiAccent"
+            android:layout_width="22dp"
+            android:layout_height="3dp"
+            android:layout_marginBottom="@dimen/space_md"
+            android:background="@drawable/bg_pill_soft"
+            android:backgroundTint="@color/accent_blue" />
+
+        <TextView
+            android:id="@+id/tvKpiLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.Capitall.MetricLabel" />
+
+        <TextView
+            android:id="@+id/tvKpiValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.Capitall.MetricValue" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
