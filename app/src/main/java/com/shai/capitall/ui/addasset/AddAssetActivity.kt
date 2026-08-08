@@ -96,7 +96,12 @@ class AddAssetActivity : AppCompatActivity() {
             } else {
                 null
             }
-            val annualRate = binding.etAnnualRate.text.toString().toDoubleOrNull()?.let { it / 100.0 }
+            // כמו שאר השדות המותנים — נשמר רק כשהוא גלוי. בנכס נסחר הוא מוסתר, ולכן null.
+            val annualRate = if (binding.tilAnnualRate.visibility == View.VISIBLE) {
+                binding.etAnnualRate.text.toString().toDoubleOrNull()?.let { it / 100.0 }
+            } else {
+                null
+            }
             val termYears = if (binding.tilTermYears.visibility == View.VISIBLE) {
                 binding.etTermYears.text.toString().toIntOrNull()
             } else {
@@ -322,10 +327,27 @@ class AddAssetActivity : AppCompatActivity() {
         binding.tilTermYears.visibility = if (showTerm) View.VISIBLE else View.GONE
     }
 
-    // ממלא את שדה השיעור השנתי בברירת המחדל של הקטגוריה (המשתמש יכול לשנות)
+    /**
+     * ממלא את שדה השיעור השנתי בברירת המחדל של הקטגוריה (המשתמש יכול לשנות).
+     *
+     * בנכס נסחר (מניה/קריפטו) השדה מוסתר: השווי שלו נקבע ממחיר שוק חי ולא משערוך לפי זמן —
+     * ראה [AssetValuation], שממנו נכסים מסוג STOCK/CRYPTO אינם עוברים כלל. הצגת שיעור שנתי שם
+     * מטעה, כי הוא נראה כאילו הוא משפיע על השווי בזמן שהוא מתעלם ממנו לחלוטין.
+     */
     private fun updateRateFieldForCategory(categoryDef: CategoryDefinition?) {
-        val key = categoryDef?.key ?: return
-        val defaultRate = if (binding.rbLiability.isChecked) {
+        val key = categoryDef?.key
+        val isLiability = binding.rbLiability.isChecked
+        val isMarketAsset = !isLiability && (key == STOCKS_CATEGORY_KEY || key == CRYPTO_CATEGORY_KEY)
+
+        binding.tilAnnualRate.visibility = if (isMarketAsset) View.GONE else View.VISIBLE
+        if (isMarketAsset) {
+            binding.etAnnualRate.text?.clear()
+            return
+        }
+        // אין קטגוריה נבחרת (רשימה ריקה) — השדה גלוי אך אין ברירת מחדל למלא
+        if (key == null) return
+
+        val defaultRate = if (isLiability) {
             AssetValuation.liabilityAnnualRate(key)
         } else {
             AssetValuation.assetAnnualRate(key)
