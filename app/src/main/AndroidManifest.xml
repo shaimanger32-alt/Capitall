@@ -30,21 +30,27 @@
             android:name=".ui.dashboard.DashboardActivity"
             android:theme="@style/Theme.Capitall.Dashboard"
             android:exported="false" />
+        <!-- מסכי טופס: adjustResize מכווץ את התוכן הגליל כשהמקלדת נפתחת,
+             כך שכפתור השמירה נשאר בהישג יד ולא מוסתר מאחוריה. -->
         <activity
             android:name=".ui.addtransaction.AddTransactionActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="false" />
 
         <activity
             android:name=".ui.addasset.AddAssetActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
             android:name=".ui.selectcategory.SelectCategoryActivity"
             android:exported="false" />
         <activity
             android:name=".ui.addstock.AddStockActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
             android:name=".ui.addcrypto.AddCryptoActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
             android:name=".ui.screener.ScreenerActivity"
