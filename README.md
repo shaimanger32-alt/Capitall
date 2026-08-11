@@ -77,16 +77,15 @@
 
 ## צילומי מסך
 
-<!--
-להוספה לפני ההגשה: צלם 4–6 מסכים, שמור אותם ב-docs/screenshots/,
-והחלף את השורה למטה בטבלה כמו:
+| התחברות | דשבורד — מצב השוואה | גרף לפי קטגוריה |
+|:---:|:---:|:---:|
+| <img src="docs/screenshots/01-login.png" width="230"> | <img src="docs/screenshots/02-dashboard-comparison.png" width="230"> | <img src="docs/screenshots/03-category-chart.png" width="230"> |
+| Google Sign-In | שני קווי סמן והפרש ב-₪ ובאחוזים | כל קטגוריה כסדרה נפרדת |
 
-| דשבורד | תיק מניות | תיק משותף | ניתוח עומק |
-|---|---|---|---|
-| <img src="docs/screenshots/dashboard.png" width="200"> | <img src="docs/screenshots/stocks.png" width="200"> | <img src="docs/screenshots/space.png" width="200"> | <img src="docs/screenshots/deepdive.png" width="200"> |
--->
-
-_צילומי מסך יתווספו כאן._
+| תיק מניות וקריפטו | יבוא דף חשבון | תיק משותף |
+|:---:|:---:|:---:|
+| <img src="docs/screenshots/04-stock-portfolio.png" width="230"> | <img src="docs/screenshots/05-import.png" width="230"> | <img src="docs/screenshots/06-shared-space.png" width="230"> |
+| מחירי שוק חיים ורווח/הפסד | 23 עסקאות מקובץ אחד, עם שיוך אוטומטי | מאזן "מי חייב למי" והצעת סילוק |
 
 🎥 **[סרטון הדגמה](#)** — הקישור יתעדכן לאחר ההעלאה.
 
